@@ -1,0 +1,18 @@
+import pandas as pd
+#sample  data
+data={'Scores':[85,90,78,92,88,76,95,89,84,91}
+df=pd.DataFrame(data)
+#Frequency distribution 
+freq_dist=df['score'].value_counts()
+Print("Frequency Distribution:\n",freq_dist)
+#Calculating averages and variability
+Print("Mean:",df['Scores'].mean())
+Print("Standard Deviation:",df['Scores'].std())
+[10/02, 11:46 am] +91 63748 15525: 
+
+Case study:
+import numpy as NP
+#Delivery times in hours
+delivery_times=np.array([24,18,30,22,25,20,24,22,26,28])
+print("Mean Delivery Time:",np.mean(delivery_times))
+print("Standard Deviation:",np.std(delivery_times))
