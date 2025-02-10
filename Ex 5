@@ -1,0 +1,24 @@
+import numpy as np 
+scipy.stats import norm
+ 
+# Scatter plot example
+x=[1,2,3,4,5]
+y=[2,4,6,8,10] 
+plt.Scatter(x,y)
+plt.title("Scatter plot")
+plt.show()
+
+#Normal curve example
+data=np.random.normal(0,1,1000)
+x=np.linespace(-3,3,100)
+plt.plot(x,norm.pdf(x,0,1))
+plt.title("Normal Distribution  Curve")
+plt.show()
+ Case study:
+import numpy as np
+
+# Temperature and Humidity data
+temp=[30,32,35,28,25,27,29,34]
+humidity=[70,65,60,75,80 ,78,72,68]
+correlation=np.corrcoef(temp,humidity)[0,1]
+print("Correlation Coefficient:",correlation)
